@@ -92,8 +92,8 @@ def create_rfm_df(df):
     return rfm_df
 
 # Load cleaned data
-day_df = pd.read_csv('day_clean.csv')
-hour_df = pd.read_csv('hour_clean.csv')
+day_df = pd.read_csv('https://raw.githubusercontent.com/Prayoga-bit/Bike-Sharing-Data-Analysis/refs/heads/main/dashboard/day_clean.csv')
+hour_df = pd.read_csv('https://raw.githubusercontent.com/Prayoga-bit/Bike-Sharing-Data-Analysis/refs/heads/main/dashboard/hour_clean.csv')
 
 # Memastikan dteday dalam bentuk datetime
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
